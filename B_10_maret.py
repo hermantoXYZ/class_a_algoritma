@@ -36,5 +36,16 @@
 #     print("coba lagi")
     
 
-for i in range(20):
-    print("Belajar Loop:", i)
+# for i in range(20):
+#     print("Belajar Loop:", i)
+
+# for i in range(10):
+#     # if i == 5:
+#     #     break  # Stops the loop when i == 5
+
+#     # if i == 5:
+#         pass  # Skips the iteration when i == 5
+#     print(i)
+
+def fungsi_belum_jadi():
+    pass  # Placeholder, doesn't execute anything

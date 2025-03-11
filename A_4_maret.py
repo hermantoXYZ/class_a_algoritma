@@ -61,27 +61,65 @@
 # list_number = [100, 200, 384, 4049]
 # print( 100 in list_number)
 
-fruits = ['apple', 'banana', 'orange', 'grape']
+# fruits = ['apple', 'banana', 'orange', 'grape']
 
-# Memeriksa apakah 'banana' ada dalam list
-if 'es buah' not in fruits:
-    print("belum watktunya berbuka.")
+# # Memeriksa apakah 'banana' ada dalam list
+# if 'es buah' not in fruits:
+#     print("belum watktunya berbuka.")
 
-# Memeriksa apakah 'pear' tidak ada dalam list
-if 'pear' not in fruits:
-    print("Pear tidak ada dalam list buah-buahan.")
-
-
-a=10
-if(a>10):
-    print("Value of a is greater than 10")
-else :
-    print("Value of a is 10")
+# # Memeriksa apakah 'pear' tidak ada dalam list
+# if 'pear' not in fruits:
+#     print("Pear tidak ada dalam list buah-buahan.")
 
 
-# STATMENT 1
-JIKA A LEBIH BESAR DARI 10
-OUPUT: nilai lebih dari besar 10
+# a=10
+# if(a>10):
+#     print("Value of a is greater than 10")
+# else :
+#     print("Value of a is 10")
 
-# STATMENT 2
-OUPUT: nilai lebih kecil dari 10
+
+# # STATMENT 1
+# JIKA A LEBIH BESAR DARI 10
+# OUPUT: nilai lebih dari besar 10
+
+# # STATMENT 2
+# OUPUT: nilai lebih kecil dari 10
+
+# OUTPUT TUGAS
+
+def menentukan_nilai_lulus_berdasarkan_indeks (nilai_lulus):
+    if 91 <= nilai_lulus <= 100:
+        return "A"
+    elif 86 <= nilai_lulus <= 90:
+        return "A-"
+    elif 81 <= nilai_lulus <= 85:
+        return "B+"
+    elif 76 <= nilai_lulus <= 80:
+        return "B"
+    elif 71 <= nilai_lulus <= 75:
+        return "B-"
+    elif 66 <= nilai_lulus <= 70:
+        return "C+"
+    elif 61 <= nilai_lulus <= 65:
+        return "C"
+    elif 56 <= nilai_lulus <= 60:
+        return "C-"
+    elif 51 <= nilai_lulus <= 55:
+        return "D+"
+    elif 46 <= nilai_lulus <= 50:
+        return "D"
+    elif 41 <= nilai_lulus <= 45:
+        return "D-"
+    else:
+        return "E"
+    
+nilai_lulus = int(input("masukkan nilai"))
+indeks = menentukan_nilai_lulus_berdasarkan_indeks(nilai_lulus)
+
+if indeks in {"A", "A-", "B+", "B", "B-", "C+", "C", "C-"}:
+    status = "LULUS"
+else:
+    status = "TIDAK LULUS"
+
+print (f"Nilai Anda: {nilai_lulus}, Indeks: {indeks}, Status: {status}")
